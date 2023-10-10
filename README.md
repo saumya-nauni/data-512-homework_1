@@ -39,6 +39,16 @@ The data for this project is extracted using the Pageviews API from Wikipedia. T
 
 - **academy_monthly_cumulative_201507-202309** - JSON file that contains the cumulative page views of all articles for both desktop and mobile access type
 
+## Data Description
+
+Each JSON file has the following fields:
+- **project**: set as en.wikipedia
+- **article**: the full name of the article
+- **granularity**: the data is extracted on a monthly basis
+- **timestamp**: time stamp in YYYYMMDDHH format, indicating the beginning of each month (UTC). The first day of the dataset covers July
+- **agent**: set to user
+- **views**: total number of page requests for the given article in the month
+
 ## Code
 
 - **api_data.ipynb** - Python Notebook that uses the API to extract the data and stores it into three different JSON files for analysis
